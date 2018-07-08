@@ -1268,6 +1268,7 @@ void adventurerEffect(struct gameState *state, int currentPlayer)
 
 void smithyEffect(struct gameState *state, int currentPlayer, int handPos)
 {
+	int i;
 	for (i = 0; i <= 3; i++)
 	{
 	  drawCard(currentPlayer, state);
@@ -1346,6 +1347,7 @@ void salvagerEffect(struct gameState *state, int choice1, int currentPlayer, int
 
 void sea_hagEffect(struct gameState *state, int currentPlayer)
 {
+      int i;
       for (i = 0; i < state->numPlayers; i++){
 	if (i != currentPlayer){
 	  state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];			    
