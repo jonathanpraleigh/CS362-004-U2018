@@ -11,5 +11,12 @@ int gainCard(int supplyPos, struct gameState *state, int toFlag, int player);
 int getCost(int cardNumber);
 int cardEffect(int card, int choice1, int choice2, int choice3, 
 	       struct gameState *state, int handPos, int *bonus);
+void adventurerEffect(struct gameState *state, int currentPlayer);
+void smithyEffect(struct gameState *state, int currentPlayer, int handPos);
+void baronEffect(int choice1, int currentPlayer, struct gameState *state);
+void salvagerEffect(struct gameState *state, int choice1, int currentPlayer, int handPos);
+void sea_hagEffect(struct gameState *state, int currentPlayer);
+
+
 
 #endif
